@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./tabiat.jfif");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.locate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.locate .city-now{
+    font-size: 70px; 
+    color: rgb(8, 7, 100);
+    font-weight: 900;
+}
+.locate .date{
+    font-size: 35px;
+    color: yellowgreen;
+}
+.locate .degree .deg{
+    font-size: 60px;
+    color: rgb(205, 214, 188);
+}
+.locate .degree{
+    font-size: 30px;
+    color: rgb(216, 185, 9);
+}
+section{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center; 
+}
+section input{
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.295);
+}
+section button{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(23, 23, 122, 0.568);
+    color: white;
+    outline: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .wrapper{
+        grid-template-columns: 100%;
+    }
+  }
